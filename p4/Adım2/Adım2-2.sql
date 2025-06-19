@@ -1,0 +1,8 @@
+-- Endpoint tanýmlama - Ana sunucu
+
+CREATE ENDPOINT MirroringEndpoint 
+STATE = STARTED 
+AS TCP (LISTENER_PORT = 5022) 
+FOR DATABASE_MIRRORING (ROLE = PARTNER);
+
+-- ZATEN OLUÞTURMUÞTUM
